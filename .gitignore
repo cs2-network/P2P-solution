@@ -30,7 +30,7 @@ tv/*.iml
 /captures
 ### Android template
 # Built application files
-/build
+*/build
 /captures
 # Files for the Dalvik VM
 *.dex

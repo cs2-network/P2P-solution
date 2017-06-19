@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:layout_margin="2dip">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/text_apiver"
+        android:textStyle="normal"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:text="PPPP_API ver:0.1.0.0"
+        android:gravity="right"
+        android:layout_marginTop="5dip" />
+
+    <FrameLayout
+        android:id="@+id/FrameLayout01"
+        android:layout_marginLeft="2dip"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1">
+
+        <com.pppp_api.sample.Monitor
+            android:id="@+id/monitor_view"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:drawSelectorOnTop="false" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/text_status"
+        android:layout_marginBottom="10dip"
+        android:textStyle="normal"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:text="UID:" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:capitalize="characters"
+            android:singleLine="true"
+            android:id="@+id/edt_uid"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dip"
+        android:gravity="right">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_conn"
+            android:text="Connect" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chk_audio"
+            android:text="Audio" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chk_video"
+            android:text="Video" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_disconn"
+            android:text="Disconn" />
+    </LinearLayout>
+</LinearLayout>
