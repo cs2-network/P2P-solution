@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		325617DE1E14A1EF00F3AFFA /* libH264Codec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 325617DC1E14A1EF00F3AFFA /* libH264Codec.a */; };
+		325617DF1E14A1EF00F3AFFA /* libPPCS_API.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 325617DD1E14A1EF00F3AFFA /* libPPCS_API.a */; };
+		828DCEB417AC87760006C4E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DCEB317AC87760006C4E6 /* UIKit.framework */; };
+		828DCEB617AC87760006C4E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DCEB517AC87760006C4E6 /* Foundation.framework */; };
+		828DCEB817AC87760006C4E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DCEB717AC87760006C4E6 /* CoreGraphics.framework */; };
+		828DCEBE17AC87760006C4E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 828DCEBC17AC87760006C4E6 /* InfoPlist.strings */; };
+		828DCEC017AC87760006C4E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 828DCEBF17AC87760006C4E6 /* main.m */; };
+		828DCEC417AC87760006C4E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 828DCEC317AC87760006C4E6 /* AppDelegate.m */; };
+		828DCEC617AC87760006C4E6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 828DCEC517AC87760006C4E6 /* Default.png */; };
+		828DCEC817AC87760006C4E6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 828DCEC717AC87760006C4E6 /* Default@2x.png */; };
+		828DCECA17AC87760006C4E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 828DCEC917AC87760006C4E6 /* Default-568h@2x.png */; };
+		828DCECD17AC87760006C4E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 828DCECC17AC87760006C4E6 /* ViewController.m */; };
+		828DCED017AC87760006C4E6 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 828DCECE17AC87760006C4E6 /* ViewController_iPhone.xib */; };
+		828DCED317AC87760006C4E6 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 828DCED117AC87760006C4E6 /* ViewController_iPad.xib */; };
+		828DCEDE17AC8CFA0006C4E6 /* CamObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = 828DCEDB17AC8CFA0006C4E6 /* CamObj.mm */; };
+		828DCEE517AC8D350006C4E6 /* av_fifo.c in Sources */ = {isa = PBXBuildFile; fileRef = 828DCEE217AC8D350006C4E6 /* av_fifo.c */; };
+		828DCEE717AC8D5C0006C4E6 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DCEE617AC8D5C0006C4E6 /* OpenAL.framework */; };
+		828DCEE917AC8D780006C4E6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DCEE817AC8D780006C4E6 /* SystemConfiguration.framework */; };
+		828DCEEB17AC8D8F0006C4E6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DCEEA17AC8D8F0006C4E6 /* AudioToolbox.framework */; };
+		828DCF0717AC903E0006C4E6 /* OpenALPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 828DCF0617AC903E0006C4E6 /* OpenALPlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		325617DC1E14A1EF00F3AFFA /* libH264Codec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libH264Codec.a; path = lib/libH264Codec.a; sourceTree = "<group>"; };
+		325617DD1E14A1EF00F3AFFA /* libPPCS_API.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPPCS_API.a; path = lib/libPPCS_API.a; sourceTree = "<group>"; };
+		8258F30E18FA00B100D6100D /* AVSTREAM_IO_Proto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSTREAM_IO_Proto.h; sourceTree = "<group>"; };
+		8258F30F18FA00B100D6100D /* PPCS_API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCS_API.h; sourceTree = "<group>"; };
+		8258F31018FA00B100D6100D /* PPCS_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCS_Error.h; sourceTree = "<group>"; };
+		8258F31118FA00B100D6100D /* PPCS_Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCS_Type.h; sourceTree = "<group>"; };
+		828DCEB017AC87760006C4E6 /* PPCS_Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPCS_Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		828DCEB317AC87760006C4E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		828DCEB517AC87760006C4E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		828DCEB717AC87760006C4E6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		828DCEBB17AC87760006C4E6 /* PPCS_Client-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PPCS_Client-Info.plist"; sourceTree = "<group>"; };
+		828DCEBD17AC87760006C4E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		828DCEBF17AC87760006C4E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		828DCEC117AC87760006C4E6 /* PPCS_Client-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PPCS_Client-Prefix.pch"; sourceTree = "<group>"; };
+		828DCEC217AC87760006C4E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		828DCEC317AC87760006C4E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		828DCEC517AC87760006C4E6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		828DCEC717AC87760006C4E6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		828DCEC917AC87760006C4E6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		828DCECB17AC87760006C4E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		828DCECC17AC87760006C4E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		828DCECF17AC87760006C4E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		828DCED217AC87760006C4E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		828DCEDA17AC8CFA0006C4E6 /* CamObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamObj.h; sourceTree = "<group>"; };
+		828DCEDB17AC8CFA0006C4E6 /* CamObj.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CamObj.mm; sourceTree = "<group>"; };
+		828DCEE217AC8D350006C4E6 /* av_fifo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = av_fifo.c; sourceTree = "<group>"; };
+		828DCEE317AC8D350006C4E6 /* av_fifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = av_fifo.h; sourceTree = "<group>"; };
+		828DCEE617AC8D5C0006C4E6 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		828DCEE817AC8D780006C4E6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		828DCEEA17AC8D8F0006C4E6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		828DCEF717AC8F7B0006C4E6 /* H264iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264iPhone.h; sourceTree = "<group>"; };
+		828DCF0517AC903E0006C4E6 /* OpenALPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenALPlayer.h; sourceTree = "<group>"; };
+		828DCF0617AC903E0006C4E6 /* OpenALPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenALPlayer.m; sourceTree = "<group>"; };
+		82B7513C17B0ED5C00E29847 /* DelegateCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateCamera.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		828DCEAD17AC87760006C4E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828DCEB417AC87760006C4E6 /* UIKit.framework in Frameworks */,
+				828DCEB617AC87760006C4E6 /* Foundation.framework in Frameworks */,
+				325617DF1E14A1EF00F3AFFA /* libPPCS_API.a in Frameworks */,
+				828DCEB817AC87760006C4E6 /* CoreGraphics.framework in Frameworks */,
+				828DCEE717AC8D5C0006C4E6 /* OpenAL.framework in Frameworks */,
+				325617DE1E14A1EF00F3AFFA /* libH264Codec.a in Frameworks */,
+				828DCEE917AC8D780006C4E6 /* SystemConfiguration.framework in Frameworks */,
+				828DCEEB17AC8D8F0006C4E6 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		828DCEA717AC87760006C4E6 = {
+			isa = PBXGroup;
+			children = (
+				828DCEB917AC87760006C4E6 /* PPCS_Client */,
+				828DCEB217AC87760006C4E6 /* Frameworks */,
+				828DCEB117AC87760006C4E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		828DCEB117AC87760006C4E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				828DCEB017AC87760006C4E6 /* PPCS_Client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		828DCEB217AC87760006C4E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				828DCEE817AC8D780006C4E6 /* SystemConfiguration.framework */,
+				828DCEEA17AC8D8F0006C4E6 /* AudioToolbox.framework */,
+				828DCEE617AC8D5C0006C4E6 /* OpenAL.framework */,
+				828DCEB317AC87760006C4E6 /* UIKit.framework */,
+				828DCEB517AC87760006C4E6 /* Foundation.framework */,
+				828DCEB717AC87760006C4E6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		828DCEB917AC87760006C4E6 /* PPCS_Client */ = {
+			isa = PBXGroup;
+			children = (
+				828DCEFE17AC8FA10006C4E6 /* lib */,
+				828DCEF217AC8F7B0006C4E6 /* include */,
+				828DCED917AC8CFA0006C4E6 /* misc_classes */,
+				828DCEC217AC87760006C4E6 /* AppDelegate.h */,
+				828DCEC317AC87760006C4E6 /* AppDelegate.m */,
+				828DCECB17AC87760006C4E6 /* ViewController.h */,
+				828DCECC17AC87760006C4E6 /* ViewController.m */,
+				828DCECE17AC87760006C4E6 /* ViewController_iPhone.xib */,
+				828DCED117AC87760006C4E6 /* ViewController_iPad.xib */,
+				828DCEBA17AC87760006C4E6 /* Supporting Files */,
+			);
+			path = PPCS_Client;
+			sourceTree = "<group>";
+		};
+		828DCEBA17AC87760006C4E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				828DCEBB17AC87760006C4E6 /* PPCS_Client-Info.plist */,
+				828DCEBC17AC87760006C4E6 /* InfoPlist.strings */,
+				828DCEBF17AC87760006C4E6 /* main.m */,
+				828DCEC117AC87760006C4E6 /* PPCS_Client-Prefix.pch */,
+				828DCEC517AC87760006C4E6 /* Default.png */,
+				828DCEC717AC87760006C4E6 /* Default@2x.png */,
+				828DCEC917AC87760006C4E6 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		828DCED917AC8CFA0006C4E6 /* misc_classes */ = {
+			isa = PBXGroup;
+			children = (
+				82B7513C17B0ED5C00E29847 /* DelegateCamera.h */,
+				828DCF0517AC903E0006C4E6 /* OpenALPlayer.h */,
+				828DCF0617AC903E0006C4E6 /* OpenALPlayer.m */,
+				828DCEE217AC8D350006C4E6 /* av_fifo.c */,
+				828DCEE317AC8D350006C4E6 /* av_fifo.h */,
+				828DCEDA17AC8CFA0006C4E6 /* CamObj.h */,
+				828DCEDB17AC8CFA0006C4E6 /* CamObj.mm */,
+			);
+			path = misc_classes;
+			sourceTree = "<group>";
+		};
+		828DCEF217AC8F7B0006C4E6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8258F30E18FA00B100D6100D /* AVSTREAM_IO_Proto.h */,
+				8258F30F18FA00B100D6100D /* PPCS_API.h */,
+				8258F31018FA00B100D6100D /* PPCS_Error.h */,
+				8258F31118FA00B100D6100D /* PPCS_Type.h */,
+				828DCEF717AC8F7B0006C4E6 /* H264iPhone.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		828DCEFE17AC8FA10006C4E6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				325617DC1E14A1EF00F3AFFA /* libH264Codec.a */,
+				325617DD1E14A1EF00F3AFFA /* libPPCS_API.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		828DCEAF17AC87760006C4E6 /* PPCS_Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 828DCED617AC87760006C4E6 /* Build configuration list for PBXNativeTarget "PPCS_Client" */;
+			buildPhases = (
+				828DCEAC17AC87760006C4E6 /* Sources */,
+				828DCEAD17AC87760006C4E6 /* Frameworks */,
+				828DCEAE17AC87760006C4E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PPCS_Client;
+			productName = PPCS_Client;
+			productReference = 828DCEB017AC87760006C4E6 /* PPCS_Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		828DCEA817AC87760006C4E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = internet;
+				TargetAttributes = {
+					828DCEAF17AC87760006C4E6 = {
+						DevelopmentTeam = 2T4EJM5HRA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 828DCEAB17AC87760006C4E6 /* Build configuration list for PBXProject "PPCS_Client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 828DCEA717AC87760006C4E6;
+			productRefGroup = 828DCEB117AC87760006C4E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				828DCEAF17AC87760006C4E6 /* PPCS_Client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		828DCEAE17AC87760006C4E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828DCEBE17AC87760006C4E6 /* InfoPlist.strings in Resources */,
+				828DCEC617AC87760006C4E6 /* Default.png in Resources */,
+				828DCEC817AC87760006C4E6 /* Default@2x.png in Resources */,
+				828DCECA17AC87760006C4E6 /* Default-568h@2x.png in Resources */,
+				828DCED017AC87760006C4E6 /* ViewController_iPhone.xib in Resources */,
+				828DCED317AC87760006C4E6 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		828DCEAC17AC87760006C4E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828DCEC017AC87760006C4E6 /* main.m in Sources */,
+				828DCEC417AC87760006C4E6 /* AppDelegate.m in Sources */,
+				828DCECD17AC87760006C4E6 /* ViewController.m in Sources */,
+				828DCEDE17AC8CFA0006C4E6 /* CamObj.mm in Sources */,
+				828DCEE517AC8D350006C4E6 /* av_fifo.c in Sources */,
+				828DCF0717AC903E0006C4E6 /* OpenALPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		828DCEBC17AC87760006C4E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				828DCEBD17AC87760006C4E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		828DCECE17AC87760006C4E6 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				828DCECF17AC87760006C4E6 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		828DCED117AC87760006C4E6 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				828DCED217AC87760006C4E6 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		828DCED417AC87760006C4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		828DCED517AC87760006C4E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		828DCED717AC87760006C4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2T4EJM5HRA;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PPCS_Client/PPCS_Client-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					./miscClasses,
+					./include,
+					./include/speex,
+					./,
+				);
+				INFOPLIST_FILE = "PPCS_Client/PPCS_Client-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/PPCS_Client/lib";
+				OTHER_CFLAGS = (
+					"-DLINUX",
+					"-DLINUX_iOS",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		828DCED817AC87760006C4E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2T4EJM5HRA;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PPCS_Client/PPCS_Client-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					./miscClasses,
+					./include,
+					./include/speex,
+					./,
+				);
+				INFOPLIST_FILE = "PPCS_Client/PPCS_Client-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/PPCS_Client/lib";
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-DLINUX",
+					"-DLINUX_iOS",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		82D114E017B23B9700A3D660 /* DebugToDevice */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DebugToDevice;
+		};
+		82D114E117B23B9700A3D660 /* DebugToDevice */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2T4EJM5HRA;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PPCS_Client/PPCS_Client-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					./miscClasses,
+					./include,
+					./include/speex,
+					./,
+				);
+				INFOPLIST_FILE = "PPCS_Client/PPCS_Client-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/PPCS_Client/lib";
+				OTHER_CFLAGS = (
+					"-DLINUX",
+					"-DLINUX_iOS",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "46548B78-D0EF-49DE-A9AA-4D3204ECA669";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = DebugToDevice;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		828DCEAB17AC87760006C4E6 /* Build configuration list for PBXProject "PPCS_Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				828DCED417AC87760006C4E6 /* Debug */,
+				82D114E017B23B9700A3D660 /* DebugToDevice */,
+				828DCED517AC87760006C4E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		828DCED617AC87760006C4E6 /* Build configuration list for PBXNativeTarget "PPCS_Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				828DCED717AC87760006C4E6 /* Debug */,
+				82D114E117B23B9700A3D660 /* DebugToDevice */,
+				828DCED817AC87760006C4E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 828DCEA817AC87760006C4E6 /* Project object */;
+}

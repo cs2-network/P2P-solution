@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PPCS_ClientUI">
+</Property><Property Name="解决方案文件" Value="D:\workspace\P2P\P2P_Release_SDK\Release_PPCS_2.2.4\Sample\Win32\PPCS\PPCS_ClientUI\PPCS_ClientUI.sln">
+</Property><Property Name="Date" Value="2016年9月28日, 星期三">
+</Property><Property Name="Time" Value="10:48">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="PPCS_ClientUI.sln" Description="文件已成功备份为 D:\workspace\P2P\P2P_Release_SDK\Release_PPCS_2.2.4\Sample\Win32\PPCS\PPCS_ClientUI\PPCS_ClientUI.sln.old">
+</Event><Event ErrorLevel="0" Project="PPCS_ClientUI" Source="PPCS_ClientUI.vcproj" Description="Converting project file 'D:\workspace\P2P\P2P_Release_SDK\Release_PPCS_2.2.4\Sample\Win32\PPCS\PPCS_ClientUI\PPCS_ClientUI.vcproj'.">
+</Event><Event ErrorLevel="1" Project="PPCS_ClientUI" Source="PPCS_ClientUI.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="PPCS_ClientUI" Source="PPCS_ClientUI.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="PPCS_ClientUI" Source="PPCS_ClientUI.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="PPCS_ClientUI" Source="PPCS_ClientUI.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="PPCS_ClientUI" Source="PPCS_ClientUI.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="PPCS_ClientUI" Source="PPCS_ClientUI.vcproj" Description="Done converting to new project file 'D:\workspace\P2P\P2P_Release_SDK\Release_PPCS_2.2.4\Sample\Win32\PPCS\PPCS_ClientUI\PPCS_ClientUI.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="PPCS_ClientUI" Source="PPCS_ClientUI.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="PPCS_ClientUI.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="PPCS_ClientUI.sln" Description="Converted">
+</Event></UpgradeLog>
