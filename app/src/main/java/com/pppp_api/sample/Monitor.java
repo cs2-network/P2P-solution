@@ -12,67 +12,67 @@ import android.view.SurfaceView;
 
 public class Monitor extends SurfaceView implements SurfaceHolder.Callback, IAVListener {
 
-    private SurfaceHolder surHolder = null;
-    private final Paint m_videoPaint = new Paint();
-    private Bitmap m_lastBmp = null;
-    private Rect rectVideo = new Rect(0, 0, 10, 10);
-    private int vWidth = 10, vHeight = 10;
+	private SurfaceHolder surHolder = null;
+	private final Paint m_videoPaint = new Paint();
+	private Bitmap m_lastBmp = null;
+	private Rect rectVideo = new Rect(0, 0, 10, 10);
+	private int vWidth = 10, vHeight = 10;
 
-    public Monitor(Context context, AttributeSet attrs) {
-        super(context, attrs);
+	public Monitor(Context context, AttributeSet attrs) {
+		super(context, attrs);
 
-        surHolder = getHolder();
-        surHolder.addCallback(this);
-    }
+		surHolder = getHolder();
+		surHolder.addCallback(this);
+	}
 
-    @Override
-    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
-        if (vWidth != width || vHeight != height) {
-            vWidth = width;
-            vHeight = height;
+	@Override
+	public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
+		if (vWidth != width || vHeight != height) {
+			vWidth = width;
+			vHeight = height;
 
-            synchronized (this) {
-                rectVideo.set(0, 0, width, height);
+			synchronized (this) {
+				rectVideo.set(0, 0, width, height);
 
-                rectVideo.right = 3 * height / 4;
-                rectVideo.offset((width - rectVideo.right) / 2, 0);
-            }
-        }
-    }
+				rectVideo.right = 3 * height / 4;
+				rectVideo.offset((width - rectVideo.right) / 2, 0);
+			}
+		}
+	}
 
-    @Override
-    public void surfaceCreated(SurfaceHolder holder) {
+	@Override
+	public void surfaceCreated(SurfaceHolder holder) {
 
-    }
+	}
 
-    @Override
-    public void surfaceDestroyed(SurfaceHolder holder) {
+	@Override
+	public void surfaceDestroyed(SurfaceHolder holder) {
 
-    }
+	}
 
-    public void drawVideo() {
-        Canvas videoCanvas = null;
-        synchronized (this) {
-            videoCanvas = surHolder.lockCanvas(null);
-            if (videoCanvas != null) {
-                videoCanvas.drawColor(Color.BLACK);
-                if (m_lastBmp != null)
-                    videoCanvas.drawBitmap(m_lastBmp, null, rectVideo, m_videoPaint);
-                surHolder.unlockCanvasAndPost(videoCanvas);
-                videoCanvas = null;
-            }
-        }
-    }
+	public void drawVideo() {
+		Canvas videoCanvas = null;
+		synchronized (this) {
+			videoCanvas = surHolder.lockCanvas(null);
+			if (videoCanvas != null) {
+				videoCanvas.drawColor(Color.BLACK);
+				if (m_lastBmp != null)
+					videoCanvas.drawBitmap(m_lastBmp, null, rectVideo, m_videoPaint);
+				surHolder.unlockCanvasAndPost(videoCanvas);
+				videoCanvas = null;
+			}
+		}
+	}
 
-    @Override
-    public void updateVFrame(Bitmap bmp) {
-        m_lastBmp = bmp;
-        drawVideo();
-    }
+	@Override
+	public void updateVFrame(Bitmap bmp) {
+		m_lastBmp = bmp;
+		drawVideo();
+	}
 
-    @Override
-    public void updateAVInfo(int codeInfo, int errCode, String strInfo) {
-    }
-
+	@Override
+	public void updateAVInfo(int codeInfo, int errCode, String strInfo) {
+	}
+	
 
 }
