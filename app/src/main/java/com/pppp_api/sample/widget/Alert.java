@@ -1,4 +1,4 @@
-package com.pppp_api.sample;
+package com.pppp_api.sample.widget;
 
 import android.app.AlertDialog;
 import android.content.Context;

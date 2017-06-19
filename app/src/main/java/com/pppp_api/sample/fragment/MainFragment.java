@@ -1,4 +1,4 @@
-package com.pppp_api.sample;
+package com.pppp_api.sample.fragment;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.p2p.pppp_api.PPCS_APIs;
+import com.pppp_api.sample.R;
+import com.pppp_api.sample.widget.Alert;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -44,6 +46,7 @@ public class MainFragment extends Fragment implements IAVListener {
         mMonitor = (Monitor) root.findViewById(R.id.monitor_view);
         final TextView m_text_status = (TextView) root.findViewById(R.id.text_status);
         final EditText m_edt_uid = (EditText) root.findViewById(R.id.edt_uid);
+        m_edt_uid.setText("PPCS-014921-UKMJJ");
         final Button m_btn_conn = (Button) root.findViewById(R.id.btn_conn);
         final CheckBox m_chk_audio = (CheckBox) root.findViewById(R.id.chk_audio);
         final CheckBox m_chk_video = (CheckBox) root.findViewById(R.id.chk_video);
@@ -62,7 +65,6 @@ public class MainFragment extends Fragment implements IAVListener {
                     Alert.showAlert(mContext, "Tips", "Please fill UID field.", "Ok");
                     return;
                 }
-
                 m_curCamera.setData(sUID);
                 int nRet = m_curCamera.connectDev();
                 if (nRet >= 0) {

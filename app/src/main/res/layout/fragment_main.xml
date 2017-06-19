@@ -24,7 +24,7 @@
         android:layout_marginLeft="2dip"
         android:layout_weight="1">
 
-        <com.pppp_api.sample.Monitor
+        <com.cs2_network.widget.Monitor
             android:id="@+id/monitor_view"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
